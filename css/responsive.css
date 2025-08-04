@@ -296,4 +296,15 @@
         background: white !important;
         color: black !important;
     }
+}
+
+/* Mobile optimization for hero background */
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll !important; /* Better performance on mobile */
+    }
+
+    .hero::before {
+        opacity: 0.7; /* Reduce overlay intensity on mobile */
+    }
 } 

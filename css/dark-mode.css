@@ -63,7 +63,10 @@
 
 /* Hero Section Dark Mode */
 [data-theme="dark"] .hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    background: 
+        linear-gradient(135deg, rgba(15, 23, 42, 0.90) 0%, rgba(30, 41, 59, 0.95) 100%),
+        url('../assets/images/hero-bg.png') center center / cover no-repeat;
+    background-attachment: fixed;
 }
 
 [data-theme="dark"] .profile-image {
