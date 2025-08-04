@@ -89,7 +89,7 @@ portfolio/
 │   │   ├── profile.jpeg      # Professional headshot
 │   │   └── icons/            # Social media & tech icons
 │   └── 📁 files/
-│       └── Saurav_Shaurya_Resume.pdf # Resume download
+│       └── Saurav2025_CV.pdf         # Latest CV download
 ├── 📁 .github/workflows/
 │   └── deploy.yml            # GitHub Actions deployment
 ├── 📄 package.json           # Dependencies & scripts
@@ -172,7 +172,7 @@ const CONFIG = {
 
 ### **Assets**
 - Replace `assets/images/profile.jpeg` with your professional photo
-- Add your resume as `assets/files/YourName_Resume.pdf`
+- Add your resume as `assets/files/YourName_CV.pdf`
 - Update social media icons in `assets/images/icons/`
 
 ## 📊 Performance Metrics
