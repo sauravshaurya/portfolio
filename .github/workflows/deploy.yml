@@ -26,30 +26,29 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18'
-          cache: 'npm'
-          
-      - name: Install dependencies
-        run: npm ci
-        
       - name: Setup Pages
         uses: actions/configure-pages@v4
         
-      - name: Build with Jekyll
+      - name: Build site
         run: |
-          # Since we're using static files, we'll just copy everything needed
+          # Create _site directory for GitHub Pages
           mkdir -p ./_site
+          
+          # Copy all necessary files
           cp -r assets ./_site/
           cp -r css ./_site/
           cp -r js ./_site/
           cp index.html ./_site/
-          # Copy any other static files if needed
-          if [ -f favicon.ico ]; then cp favicon.ico ./_site/; fi
-          if [ -f robots.txt ]; then cp robots.txt ./_site/; fi
-          if [ -f sitemap.xml ]; then cp sitemap.xml ./_site/; fi
+          
+          # Copy optional files if they exist
+          [ -f favicon.ico ] && cp favicon.ico ./_site/ || true
+          [ -f robots.txt ] && cp robots.txt ./_site/ || true
+          [ -f sitemap.xml ] && cp sitemap.xml ./_site/ || true
+          [ -f CNAME ] && cp CNAME ./_site/ || true
+          
+          # List contents for debugging
+          echo "Site contents:"
+          ls -la ./_site/
           
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
