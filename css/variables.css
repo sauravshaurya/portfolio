@@ -1,0 +1,76 @@
+:root {
+    /* Primary Colors */
+    --primary-green: #1a4d3a;          /* Dark forest green for hero */
+    --primary-green-light: #2d6b4f;    /* Lighter green for accents */
+    --primary-green-dark: #0f2e21;     /* Darker green for depth */
+    
+    /* Neutral Colors */
+    --white: #ffffff;
+    --text-primary: #1f2937;           /* Dark gray for main text */
+    --text-secondary: #6b7280;         /* Medium gray for secondary text */
+    --text-light: #9ca3af;             /* Light gray for subtle text */
+    --bg-light: #f9fafb;               /* Light background */
+    --bg-white: #ffffff;               /* Pure white background */
+    --border-light: #e5e7eb;           /* Light borders */
+    
+    /* Accent Colors */
+    --accent-blue: #3b82f6;            /* For links and interactive elements */
+    --accent-gray: #4b5563;            /* For buttons and secondary elements */
+    
+    /* Legacy Support - map old variables to new ones */
+    --primary-color: var(--primary-green);
+    --secondary-color: var(--primary-green-light);
+    --accent-color: var(--accent-blue);
+    --bg-primary: var(--bg-white);
+    --bg-secondary: var(--bg-light);
+    --bg-dark: #111827;
+    --border-color: var(--border-light);
+    
+    /* Font Families */
+    --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Inter', sans-serif;
+    --font-mono: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', monospace;
+    
+    /* Legacy Support */
+    --font-family-primary: var(--font-primary);
+    --font-family-mono: var(--font-mono);
+    
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-base: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.25rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-4xl: 2.25rem;
+    --font-size-5xl: 3rem;
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-2xl: 3rem;
+    --spacing-3xl: 4rem;
+    
+    /* Layout */
+    --container-max-width: 1200px;
+    --navbar-height: 4rem;
+    --section-padding: 5rem 0;
+    
+    /* Shadows */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    
+    /* Transitions */
+    --transition-fast: 0.15s ease-in-out;
+    --transition-normal: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+    
+    /* Breakpoints (for JS) */
+    --bp-sm: 640px;
+    --bp-md: 768px;
+    --bp-lg: 1024px;
+    --bp-xl: 1280px;
+} 

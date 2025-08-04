@@ -1,0 +1,24 @@
+{
+  "name": "saurav-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website for Saurav Shaurya",
+  "scripts": {
+    "dev": "npx live-server --port=3000",
+    "build": "npm run build:css && npm run build:js && npm run optimize:images",
+    "build:css": "npx postcss css/*.css --dir dist/css --use autoprefixer cssnano",
+    "build:js": "npx terser js/*.js --compress --mangle --output dist/js/main.min.js",
+    "optimize:images": "npx imagemin assets/images/*.{jpg,png} --out-dir=dist/assets/images --plugin=imagemin-webp",
+    "lighthouse": "npx lighthouse https://yourusername.github.io --output=html --output-path=./lighthouse-report.html"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "terser": "^5.24.0",
+    "lighthouse": "^11.3.0"
+  }
+} 
